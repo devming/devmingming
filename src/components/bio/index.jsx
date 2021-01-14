@@ -24,16 +24,12 @@ export const Bio = () => (
               />
               <div className="author-name">
                 <span className="author-name-prefix">Written by</span>
-                <Link to={'/about'} className="author-name-content">
-                  <span>Lee And Jang</span>
+                <Link to={'https://www.notion.so/Career-2251d4e5dfb44307afbb1a3b7bbc13bb'} className="author-name-content">
+                  <span>devming</span>
                 </Link>
                 <div className="author-introduction">{introduction}</div>
                 <p className="author-socials">
-                  {social.github && (
-                    <a href={`https://github.com/${social.github}`}>GitHub</a>
-                  )}
-                  {social.lblog && <a href={`${social.lblog}`}>L's Blog</a>}
-                  {social.github && <a href={`${social.jblog}`}>J's Blog</a>}
+                  {social.github && <a href={`https://github.com/${social.github}`}>GitHub</a>}
                 </p>
               </div>
             </div>
@@ -46,7 +42,7 @@ export const Bio = () => (
 
 const bioQuery = graphql`
   query BioQuery {
-    avatar: file(absolutePath: { regex: "/leeandjang.png/" }) {
+    avatar: file(absolutePath: { regex: "/profile.jpeg/" }) {
       childImageSharp {
         fixed(width: 72, height: 72) {
           ...GatsbyImageSharpFixed
@@ -59,8 +55,6 @@ const bioQuery = graphql`
         introduction
         social {
           github
-          lblog
-          jblog
         }
       }
     }

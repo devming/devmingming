@@ -7,7 +7,7 @@ module.exports = {
   social: {
     github: `devming` // Your GitHub account
   },
-  icon: `content/assets/React.js_logo-512.png`, // Add your favicon
+  icon: `content/assets/swift.png`, // Add your favicon
   keywords: [`iOS`, `Apple`, `Project Vanilla`, `Stock`],
   comment: {
     disqusShortName: '', // Your disqus-short-name. check disqus.com.
@@ -22,7 +22,7 @@ module.exports = {
   share: {
     facebookAppId: '', // Add facebookAppId for using facebook share feature v3.2
   },
-  ga: '', // Add your google analytics tranking ID
+  ga: 'UA-107198657-1', // Add your google analytics tranking ID
   seo: {
     resolve: 'gatsby-plugin-robots-txt',
     options: {
