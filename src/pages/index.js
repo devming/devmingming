@@ -169,7 +169,7 @@ export default ({ data, location }) => {
               location={location}
               rootPath={rootPath}
             />
-            <Head title={HOME_TITLE} keywords={siteMetadata.keywords} />
+            <Head title={'Blog'} keywords={siteMetadata.keywords} />
             <Bio />
             <Search
               inputSearchWord={inputSearchWord}
